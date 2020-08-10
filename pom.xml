@@ -21,13 +21,6 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-
     <!--测试-->
     <dependency>
       <groupId>junit</groupId>
@@ -149,5 +142,12 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <resources>
+      <resource>
+        <directory>src/main/webapp/WEB-INF</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
   </build>
+
 </project>
