@@ -13,4 +13,10 @@
 
     <!--    <context:property-placeholder ignore-unresolvable="true" location="classpath"/>-->
 
+    <context:property-placeholder location="classpath:jdbc.properties"></context:property-placeholder>
+    <bean id="bear" class="com.bear.springmvc4test.component.Bear">
+        <property name="name" value="${jdbc.user}"></property>
+    </bean>
+
+
 </beans>
