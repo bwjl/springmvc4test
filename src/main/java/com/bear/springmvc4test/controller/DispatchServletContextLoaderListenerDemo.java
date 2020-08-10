@@ -26,6 +26,7 @@ public class DispatchServletContextLoaderListenerDemo {
      */
     @GetMapping("duplicateDefineBean")
     public void duplicateDefineBean() {
+
         //servletContext 定义bean注入 会覆盖 ContextLoaderListener 定义的bean注入
         System.out.println(dispatchServletContextLoaderListenerDuplicateDefineBean.getName()); //DispatchServlet:DispatchServletContextLoaderListenerDuplicateDefineBean
     }
