@@ -1,6 +1,7 @@
 package com.bear.springmvc4test.controller;
 
 import com.bear.springmvc4test.component.Bear;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,9 +22,13 @@ public class BeanInject {
     @Resource
     private Bear bear;
 
+    @Value("${jdbc.password}")
+    private String password;
+
     @GetMapping("index")
     public void index() {
         System.out.println(bear.getName() + "xxx");
+        System.out.println("password:" + password);
     }
 
 }
