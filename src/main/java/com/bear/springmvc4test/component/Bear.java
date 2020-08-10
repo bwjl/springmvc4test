@@ -14,6 +14,10 @@ public class Bear {
 
     private String name;
 
+    public Bear() {
+        System.out.println("Bear");
+    }
+
     public void setName(String name) {
         this.name = name;
     }
