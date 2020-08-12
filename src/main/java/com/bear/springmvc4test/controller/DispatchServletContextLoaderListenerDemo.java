@@ -15,7 +15,7 @@ import javax.annotation.Resource;
  */
 
 
-@RequestMapping("DispatchServletContextLoaderListenerDemo")
+@RequestMapping("dispatchServletContextLoaderListener")
 public class DispatchServletContextLoaderListenerDemo {
 
     @Resource
