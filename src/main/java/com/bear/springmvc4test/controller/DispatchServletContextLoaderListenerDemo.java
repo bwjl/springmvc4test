@@ -30,4 +30,5 @@ public class DispatchServletContextLoaderListenerDemo {
         System.out.println(dispatchServletContextLoaderListenerDuplicateDefineBean.getName()); //DispatchServlet:DispatchServletContextLoaderListenerDuplicateDefineBean
     }
 
+
 }
